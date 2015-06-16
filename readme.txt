@@ -1,16 +1,16 @@
-=== XTMPAY GATEWAY ===
+﻿=== XTMPAY GATEWAY ===
 Contributors: Alongkorn Khaoto
-Tags: tmpay, payment gateway, truemoney
+Tags: xtmpay,truemoney, tmpay, payment gateway
 Requires at least: 4.1
 Tested up to: 4.2.2
 License: GPLv2 or later
 
-TrueMoney Payment Gateway service by TMPAY.NET.
+A TrueMoney Payment Gateway service by TMPAY.NET.
 
 
 == Description ==
 
-XTMPAY GATEWAY คือระบบตัดบัตร TrueMoney  ซึ่งให้บริการโดย tmpay.net.
+XTMPAY GATEWAY คือ ระบบตัดบัตร TrueMoney สำหรับ Wordpress  ซึ่งใช้ API และให้บริการโดย TMPAY.NET
 
 Major features in TMPAY GATEWAY include:
 
@@ -38,4 +38,4 @@ PS: ถ้ากด Deactivate plugin ระบบจะทำการลบข
 * Release Date - 28 / 04 / 2015 *
 
 * TMPAY PAYMENT GATEWAY [Setting / TMPAY]
-* + TruMoney Transaction List
+* + TrueMoney Transaction List
