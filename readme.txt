@@ -36,17 +36,15 @@ PS: ถ้ากด Deactivate plugin ระบบจะทำการลบข
 
 == Frequently Asked Questions ==
 
- [WordPress](http://wordpress.org/ "Your favorite software") 
+ คำถามที่พบบ่อย >> [FAQ](http://www.iamzer.com/xtmpay-faq "คำถามที่พบบ่อย") 
 
 
 == Screenshots ==
 
-1. หน้าตั้งค่า XTMPAY 
-`/assets/screenshot-1.jpg`
+1. หน้าตั้งค่า XTMPAY `/assets/screenshot-1.jpg`
 
 
-2.ตั้งค่า สถานะ VIP สมาชิก
-`/assets/screenshot-1.jpg`
+2.ตั้งค่า สถานะ VIP สมาชิก`/assets/screenshot-2.jpg`
 
 == Changelog ==
 
