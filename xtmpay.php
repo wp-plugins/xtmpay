@@ -51,7 +51,7 @@ if(!isset($TMPAYDB->id)){
     add_option("xtmpay_licensekey",'');
     add_option("xtmlicensekey_type",'');
 
-    tmpay_insert("vip_value",'');
+    tmpay_insert("vip_value",'50');
     tmpay_insert("xtmpay_noticetext",'');
 
 }
