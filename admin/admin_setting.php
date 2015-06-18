@@ -168,7 +168,7 @@ value="<?php echo get_option('xtmpay_merchant_id'); ?>" />
     หรือมากกว่า</th>
 </tr>
 <tr valign="top">
-  <th colspan="2" valign="middle" scope="row">&nbsp;</th>
+  <th colspan="2" valign="middle" scope="row">Shortcode สำหรับใช้หน้า Post :&nbsp;<code>[vip] Content For VIP [/vip]</code></th>
 </tr>
 <tr valign="top">
   <th height="37" colspan="2" valign="middle" bgcolor="#F1F1F1" scope="row" ><h3><strong>Notice Footer</strong></h3></th>
