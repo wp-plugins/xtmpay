@@ -1,4 +1,4 @@
-﻿=== XTMPAY GATEWAY ===
+=== XTMPAY GATEWAY ===
 Contributors: Alongkorn Khaoto
 Tags: xtmpay,truemoney, tmpay, payment gateway
 Requires at least: 4.1
@@ -23,7 +23,7 @@ Major features in TMPAY GATEWAY include:
 
 
 
-PS: ยังไม่มีอะไรใหม่.
+PS: ฝากโหวตให้คะแนนกันด้วยนะครับ.
 
 
 
