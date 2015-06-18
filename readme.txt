@@ -10,7 +10,7 @@ A TrueMoney Payment Gateway service by TMPAY.NET.
 
 == Description ==
 
-XTMPAY GATEWAY คือ ระบบตัดบัตร TrueMoney สำหรับ Wordpress  ใช้ API ของ TMPAY.NET
+XTMPAY GATEWAY คือ ระบบตัดบัตร TrueMoney สำหรับ Wordpress  (ใช้ API ของ TMPAY.NET)
 
 Major features in TMPAY GATEWAY include:
 
