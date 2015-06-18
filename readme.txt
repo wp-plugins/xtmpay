@@ -34,7 +34,19 @@ Upload TMPAY plugin ขึ้นเว็บไซต์, จากนั้น�
 PS: ถ้ากด Deactivate plugin ระบบจะทำการลบข้อมูลบัตร TrueMoney ทั้งหมด. หากต้องการลงใหม่ กด Activate plugin
 
 
+== Frequently Asked Questions ==
 
+ [WordPress](http://wordpress.org/ "Your favorite software") 
+
+
+== Screenshots ==
+
+1. หน้าตั้งค่า XTMPAY 
+`/assets/screenshot-1.jpg`
+
+
+2.ตั้งค่า สถานะ VIP สมาชิก
+`/assets/screenshot-1.jpg`
 
 == Changelog ==
 
