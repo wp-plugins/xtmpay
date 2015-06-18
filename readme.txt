@@ -41,10 +41,11 @@ PS: ถ้ากด Deactivate plugin ระบบจะทำการลบข
 
 == Screenshots ==
 
-1. หน้าตั้งค่า XTMPAY `/assets/screenshot-1.jpg`
+1. หน้าตั้งค่า XTMPAY '/assets/screenshot-1.jpg'
+
+2.ตั้งค่า สถานะ VIP สมาชิก '/assets/screenshot-2.jpg'
 
 
-2.ตั้งค่า สถานะ VIP สมาชิก`/assets/screenshot-2.jpg`
 
 == Changelog ==
 
