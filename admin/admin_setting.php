@@ -156,8 +156,8 @@ value="<?php echo get_option('xtmpay_merchant_id'); ?>" />
 </tr>
 
 <tr valign="top">
-  <th width="212" height="112" valign="middle" scope="row">ราคาบัตร ที่จะได้ เป็นสมาชิกVIP</th>
-  <th width="376" valign="middle" scope="row"><select name="vip_value" id="select">
+  <th width="134" height="112" valign="middle" scope="row">ราคาบัตร ที่จะได้ เป็นสมาชิกVIP</th>
+  <th width="454" valign="middle" scope="row"><select name="vip_value" id="select">
       <option value="50" <?php if (tmpay('vip_value')==50 ) echo ' selected'; ?> >50 บาท ^</option>
       <option value="90" <?php if (tmpay('vip_value')==90 ) echo ' selected'; ?>>90 บาท ^</option>
       <option value="150" <?php if (tmpay('vip_value')==150 ) echo ' selected'; ?>>150 บาท ^</option>
@@ -168,7 +168,9 @@ value="<?php echo get_option('xtmpay_merchant_id'); ?>" />
     หรือมากกว่า</th>
 </tr>
 <tr valign="top">
-  <th colspan="2" valign="middle" scope="row">Shortcode สำหรับใช้หน้า Post :&nbsp;<code>[vip] Content For VIP [/vip]</code></th>
+  <th colspan="2" valign="middle" scope="row">Shortcode สำหรับใช้หน้า Post :<br>    &nbsp;<code>[vip] Content For VIP [/vip]</code><br>
+<br>
+</th>
 </tr>
 <tr valign="top">
   <th height="37" colspan="2" valign="middle" bgcolor="#F1F1F1" scope="row" ><h3><strong>Notice Footer</strong></h3></th>
