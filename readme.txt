@@ -12,10 +12,14 @@ A TrueMoney Payment Gateway service by TMPAY.NET.
 
 XTMPAY GATEWAY คือ ระบบตัดบัตร TrueMoney สำหรับ Wordpress  (ใช้ API ของ TMPAY.NET)
 
+คุณสามารถสนับสนุนปลั๊กอิน XTMPAY ด้วยการ บริจาค ผ่านบัตร Truemoney (ตามกำลังทรัพย์ ) iamzer.com/truemoney 
+หรือ ต้องการ Feature มากขึ้น ลอง XTMPAY PRO.  iamzer.com/xtmpay-wpplugin
+
 Major features in TMPAY GATEWAY include:
 
 * TMPAY Setting ตั้งค่าระบบพื้นฐาน
 * TrueMoney Transaction List ระบบจัดเก็บรายการบัตร ที่สมาชิกทำรายการ เพื่อดูประวัติการทำรายการต่างๆ
+* + Option สำหรับ VIP User บริจาคแล้วได้สถานะ VIP
 
 
 
@@ -33,6 +37,12 @@ PS: ถ้ากด Deactivate plugin ระบบจะทำการลบข
 
 
 == Changelog ==
+
+= 1.1 =
+* Release Date - 19 / 06 / 2015 *
+
+* + Donate And Get VIP
+* + Option For VIP User
 
 = 1.o =
 * Release Date - 28 / 04 / 2015 *

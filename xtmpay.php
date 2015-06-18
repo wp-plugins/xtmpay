@@ -3,7 +3,7 @@
 Plugin Name: XTMPAY Gateway
 URI: http://iamzer.com
 Description: A TrueMoney payment gateway (TrueMoney cash Card). [ Service by tmpay.net ] 
-Version: 1.0
+Version: 1.1
 Author: Alongkorn Khaoto
 Author URI: http://www.iamzer.com
 License: GPL2
@@ -51,6 +51,7 @@ if(!isset($TMPAYDB->id)){
     add_option("xtmpay_licensekey",'');
     add_option("xtmlicensekey_type",'');
 
+    tmpay_insert("vip_value",'');
     tmpay_insert("xtmpay_noticetext",'');
 
 }
@@ -163,6 +164,9 @@ if (misc_parsestring($status,'0123456789') == FALSE ){
 
   if($rowcount == 1)
   {
+    if($_CONFIG['tmpay']['amount'][$amount]>=tmpay('vip_value')){
+      update_user_meta( $card_result->user_id, 'xvip', 'yes' );
+    }
     $wpdb->query($wpdb->prepare( 'UPDATE '.$tmpaydb.' SET amount= '.intval($_CONFIG['tmpay']['amount'][$amount]).',status= %d WHERE card_id= %d ',$status,$card_result->card_id));
     if($amount > 0)
     {
@@ -237,6 +241,98 @@ function tmpay_menu_bar($wp_admin_bar) {
      }
 
   }
+
+
+
+function user_vip_fields( $user ) {
+  if ( current_user_can( 'manage_options') ){
+    $user_vip = get_the_author_meta( 'xvip', $user->ID );
+    ?>
+    <table class="form-table">
+        <tr>
+            <th>สมาชิก VIP:</th>
+            <td>
+            <p><label for="uservip">
+                <input
+                    id="uservip"
+                    name="uservip"
+                    type="checkbox"
+                    value="yes"
+                    <?php if ( $user_vip=="yes" ) echo ' checked="checked"'; ?> /> (ติกเครื่องหมายถูก คือเป็นสมาชิก VIP)
+            </label></p>
+            </td>
+        </tr>
+    </table>
+    <?php
+}
+}
+add_action( 'show_user_profile', 'user_vip_fields' );
+add_action( 'edit_user_profile', 'user_vip_fields' );
+
+    function user_vip_fields_save( $user_id ) {
+
+    if ( current_user_can( 'manage_options') ){
+
+
+        if(sanitize_text_field($_POST['uservip'])=="yes"){
+        $vipopt="yes";
+        }else{
+        $vipopt="no";
+        }
+        update_user_meta( $user_id, 'xvip', $vipopt );
+      }
+    }
+    add_action( 'personal_options_update', 'user_vip_fields_save' );
+    add_action( 'edit_user_profile_update','user_vip_fields_save' );
+
+
+
+
+function xtmpay_add_user_vip_column( $columns ) {
+
+ $columns['vip'] = __( 'สมาชิก VIP', 'theme' );
+ return $columns;
+
+}
+add_filter( 'manage_users_columns', 'xtmpay_add_user_vip_column' );
+
+function xtmpay_show_user_vip_data( $value, $column_name, $user_id ) {
+
+ if( 'vip' == $column_name ) {
+   return get_user_meta( $user_id, 'xvip', true );
+ }
+
+}
+add_action( 'manage_users_custom_column', 'xtmpay_show_user_vip_data', 10, 3 );
+
+
+
+function vip_shortcode($atts, $content = null) {
+$xtmvipuser=get_user_meta( get_current_user_id(), 'xvip', true );
+if($xtmvipuser=="yes"){
+return $content;
+}else{
+return '<div  style="border-radius: 20px 20px 20px 20px;
+      -moz-border-radius: 20px 20px 20px 20px;
+      -webkit-border-radius: 20px 20px 20px 20px;
+      border: 1px solid #dedede;  padding: 25px 50px; margin: 20px 20px;">
+        <div>
+      <h1>สำหรับสมาชิก VIP เท่านั้น!</h1>
+      <p >กรุณาสมัคร <a href="/truemoney">สมาชิก VIP</a> <br>
+    
+      </p><br><br>
+      <a href="."><input type="submit" name="button" id="button" value="กลับหน้าหลัก" /></a>
+      </div>
+      </div>';
+}
+
+
+}
+add_shortcode('vip', 'vip_shortcode');
+
+
+
+
 
 function tmpay_shortcode($atts, $content = null) {
 extract(shortcode_atts(array(
