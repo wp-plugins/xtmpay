@@ -26,7 +26,7 @@ Major features in TMPAY GATEWAY include:
 **เหมาะสำหรับเว็บที่ต้องการเปิดรับบริจาค(Donate) / Donate แล้วสามารถเป็น VIP ได้ 
 
 
-สมัคร Account ระบบตัดบัตรที่ [TMPAY.NET](http://www.tmpay.net "สมัคร TMPAY.NET") จากนั้นจะได้รหัสร้านค้า แล้วนำมาใส่ใน Plugin ครับ
+สมัคร Account ระบบตัดบัตรที่ [TMPAY](http://www.tmpay.net "สมัคร TMPAY.NET") จากนั้นจะได้รหัสร้านค้า แล้วนำมาใส่ใน Plugin ครับ
 
 คุณสามารถสนับสนุนปลั๊กอิน XTMPAY ด้วยการ [บริจาค](http://www.iamzer.com/truemoney "บริจาคสำหรับ XTMPAY") ผ่านบัตร Truemoney (ตามกำลังทรัพย์ ) 
 หรือ ต้องการ Feature มากขึ้น ลอง [XTMPAY PRO](http://www.iamzer.com/xtmpay-wpplugin "ดูข้อมูล XTMPAY PRO").  
