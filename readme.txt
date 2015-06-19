@@ -1,4 +1,4 @@
-﻿=== XTMPAY GATEWAY ===
+=== XTMPAY GATEWAY ===
 Contributors: Alongkorn Khaoto
 Tags: xtmpay,truemoney, tmpay, payment gateway
 Requires at least: 4.1
@@ -12,14 +12,24 @@ A TrueMoney Payment Gateway service by TMPAY.NET.
 
 XTMPAY GATEWAY คือ ระบบตัดบัตร TrueMoney สำหรับ Wordpress  (ใช้ API ของ TMPAY.NET)
 
-คุณสามารถสนับสนุนปลั๊กอิน XTMPAY ด้วยการ [บริจาค](http://www.iamzer.com/truemoney "บริจาคสำหรับ XTMPAY") ผ่านบัตร Truemoney (ตามกำลังทรัพย์ ) 
-หรือ ต้องการ Feature มากขึ้น ลอง [XTMPAY PRO](http://www.iamzer.com/xtmpay-wpplugin "ดูข้อมูล XTMPAY PRO").  
+XTMPAY เหมาะสำหรับเว็บที่ต้องการเปิดรับบริจาคผ่านบัตรทรู,เว็บการกุศล หรือเอาไปแปะไว้ให้คนมาช่วยค่า Host ก็ได้ครับ ซึ่งบัตรเงินสดทรู สามารถหาซื้อง่าย ที่เซเว่น หรือ ช็อปทรู ทั่วไป รวมทั้งปัจจุบันสามารถซื้อผ่าน App มือถือได้ด้วย
+แต่ค่าธรรมเนียมของ Truemoney เก็บสูงถึง 14-15% จึงไม่น่าเหมาะกับงานขายสินค้าที่มีต้นทุนนะครับ.
 
 Major features in TMPAY GATEWAY include:
 
 * TMPAY Setting ตั้งค่าระบบพื้นฐาน
-* TrueMoney Transaction List ระบบจัดเก็บรายการบัตร ที่สมาชิกทำรายการ เพื่อดูประวัติการทำรายการต่างๆ
-* + Option สำหรับ VIP User บริจาคแล้วได้สถานะ VIP
+* TrueMoney Transaction List ระบบจัดเก็บรายการบัตรทรูที่สมาชิกเติมเข้ามา
+* + สามารถตั้งค่า ราคาบัตรขั้นต่ำที่จะได้รับสถานะ VIP
+* + สามารถแก้ไขสถานะ VIP ที่หน้า “สมาชิกทั้งหมด” แล้วเลือกสมาชิกที่ต้องการ
+* + สามารถใช้ Shortcode ในการแสดง Content เฉพาะ สมาชิก VIP
+
+**เหมาะสำหรับเว็บที่ต้องการเปิดรับบริจาค(Donate) / Donate แล้วสามารถเป็น VIP ได้ 
+
+
+สมัคร Account ระบบตัดบัตรที่ [TMPAY.NET](http://www.tmpay.net “สมัคร TMPAY.NET”) จากนั้นจะได้รหัสร้านค้า แล้วนำมาใส่ใน Plugin ครับ
+
+คุณสามารถสนับสนุนปลั๊กอิน XTMPAY ด้วยการ [บริจาค](http://www.iamzer.com/truemoney "บริจาคสำหรับ XTMPAY") ผ่านบัตร Truemoney (ตามกำลังทรัพย์ ) 
+หรือ ต้องการ Feature มากขึ้น ลอง [XTMPAY PRO](http://www.iamzer.com/xtmpay-wpplugin "ดูข้อมูล XTMPAY PRO").  
 
 
 
