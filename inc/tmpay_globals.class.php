@@ -10,7 +10,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 		const SHOW_DEBUG = false;
 		const NAME = 'XTMPAY GATEWAY';
-		const VERSION = '1.0';
+		const VERSION = '1.1';
 		const DB_VERSION = '1.00';
 		const SERVERIP = "203.146.127.112";
 		const APIURL = "http://api.iamzer.com";
